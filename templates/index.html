@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Songs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h2>Search for Similar Songs</h2>
+    <form method="POST">
+        <input type="text" name="search_query" placeholder="Enter song title" required>
+
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="danceability"> Danceability</label>
+            <label><input type="checkbox" name="genre"> Genre</label>
+            <label><input type="checkbox" name="mood"> Mood</label>
+            <label><input type="checkbox" name="sound"> Sound</label>
+            <label><input type="checkbox" name="lyrics"> Lyrics</label> 
+        </div>
+
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+        <h3>Results:</h3>
+        <ul>
+            {% for result in results %}
+                <li>{{ result }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
