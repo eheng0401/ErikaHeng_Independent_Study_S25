@@ -34,6 +34,10 @@ Further improvements would include shuffling results to provide new suggestions 
 ### Spotify Version using API:
 If the Spotify API was largely available, this likely would have immensely improved both scaling capabilities, usability, and search results. My initial idea was to provide users a way to specifically filter their searches from Spotify’s already amazing music recommendation algorithms to optimize the song searching process when users have a specific idea of what they would like to hear, as it would be futile to try and completely recreate a recommendation algorithm from scratch to try and compete with Spotify. Using their API would allow access to the entire Spotify music library, better search recommendations, would improve search speed, and the quality of the metadata.
 
+## Instructions for Running Program:
+- Download data here: https://drive.google.com/file/d/1g0TlZg6ZRtpwGQtHm8kMkEePpOhkluRK/view?usp=sharing
+- run faissSearch.py
+
 ## Sources
 AcousticBrainz, acousticbrainz.org/.
 “A Python Client for the Genius.Com API.” LyricsGenius, lyricsgenius.readthedocs.io/en/master/.
